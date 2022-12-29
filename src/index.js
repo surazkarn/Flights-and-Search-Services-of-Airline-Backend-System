@@ -3,10 +3,8 @@ const express = require('express');
 //body-parser is an npm module used to process data sent in an HTTP request body. It provides four express middleware for parsing JSON, Text, URL-encoded, and raw data sets over an HTTP request body. Before the target controller receives an incoming request, these middleware routines handle it.
 const bodyparser = require("body-parser");
 
-const {City} =require('./models/index')
 
 const {PORT} = require('./config/serverConfig');
-
 
 const setupAndStartServer = async () => {
     //create express object
@@ -18,11 +16,6 @@ const setupAndStartServer = async () => {
     
     app.listen(PORT,async() => {
         console.log(`Server started at ${PORT}`); //STRING INTERPOLATION
-        //console.log(process.env);
-        //console.log(City);
-        await City.create({
-            name: "New Delhi",
-        })
     });
 
 }
