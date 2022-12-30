@@ -44,7 +44,7 @@ class CityRepository{
     async getCity(cityId) {
         try {
             const city = await City.findByPk(cityId);
-            return City;
+            return city;
         } catch (error) {
             console.log("something went wrong in the repository layer");
             throw {error};
@@ -56,4 +56,5 @@ class CityRepository{
 
 module.exports = CityRepository;
 
-
+//38 repository layer end
+//39 service layer start
