@@ -2,8 +2,7 @@ const {City} =require('../models/index')
 
 class CityRepository{
 
-    //createCity should expect  objects in which all the details like what are the properties a new city should have are going to be mentioned
-    async createCity({name}) {
+    async createCity({ name }) {
         try {
             const city = await City.create({
                 name
