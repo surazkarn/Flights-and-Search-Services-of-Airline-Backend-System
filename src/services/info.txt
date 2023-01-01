@@ -1,0 +1,1 @@
+Here responsibility of service layer is just to call the repository layer

@@ -34,10 +34,10 @@ class CityService{
             console.log("something went wrong in the service layer");
             throw {error};
         }
-    }
+    } 
 
     async getCity(cityId){
-        try {
+        try { 
             const city = await this.cityRepository.getCity(cityId)
             return city;
         } catch (error) {
