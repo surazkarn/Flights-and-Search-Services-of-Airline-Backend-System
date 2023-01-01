@@ -1,0 +1,5 @@
+Use case of controller
+ The request is going to come on this controller, 
+ this controller is going to pass all of the requested data to the service and repository layer. 
+ They will process things and give it back to controllers . 
+ Then controller will form your response structure (how response should look like) and send it back to user.
