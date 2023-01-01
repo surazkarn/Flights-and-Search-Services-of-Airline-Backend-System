@@ -1,6 +1,8 @@
 const {City} =require('../models/index')
 
 class CityRepository{
+
+    //createCity should expect  objects in which all the details like what are the properties a new city should have are going to be mentioned
     async createCity({name}) {
         try {
             const city = await City.create({
@@ -56,5 +58,3 @@ class CityRepository{
 
 module.exports = CityRepository;
 
-//38 repository layer end
-//39 service layer start

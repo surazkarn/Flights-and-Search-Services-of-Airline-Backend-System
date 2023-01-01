@@ -1,0 +1,5 @@
+Repository Layer is responsible for communicating with any data source
+
+functionalities that are not native to js(communication outside server) require the help of runtime hence it can be an asynchronous task
+
+
