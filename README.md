@@ -47,3 +47,5 @@ and then execute
 npx sequelize model:generate --name Airport --attributes name:String,address:String,cityId:integer
 ```
 # Flights-and-Search-Services-of-Airline-Booking-Backend-System
+
+- Request Flow : routes->middlewares->controllers->service->respository->models
